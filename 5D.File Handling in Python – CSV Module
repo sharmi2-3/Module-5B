@@ -1,0 +1,38 @@
+# 5D. File Handling in Python – CSV Module
+
+##  Aim
+To write a Python program that creates a CSV file (studentsq.csv) and writes the given list of data into it using the csv module.
+
+##  Algorithm
+1.Import the csv module.
+
+2.Take a list input containing rows of data.
+
+3.Open the file studentsq.csv in write mode.
+
+4.Create a CSV writer object using csv.writer().
+
+5.Write the first row using writer.writerow() (header).
+
+6.Write the remaining rows using writer.writerows().
+
+7.Close the file automatically using the with block.
+##  Program
+```
+import csv
+a= eval(input())
+with open("studentsq.csv",'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(a[0])
+    writer.writerows(a[1:])
+rows = []
+```
+
+## Output
+<img width="258" height="296" alt="image" src="https://github.com/user-attachments/assets/d6196929-c2a3-48dc-afba-2b19b3980c78" />
+<img width="445" height="291" alt="image" src="https://github.com/user-attachments/assets/8a4e5fd2-0828-4422-8b75-1d9072ebd284" />
+<img width="444" height="290" alt="image" src="https://github.com/user-attachments/assets/196bc5d6-1121-4e95-b1c3-88543b717ba3" />
+<img width="438" height="283" alt="image" src="https://github.com/user-attachments/assets/cec00986-9715-42b2-a958-04e0f33540d3" />
+
+## Result
+Thus,the python program has been executed successfully
